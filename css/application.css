@@ -1,0 +1,95 @@
+﻿html {
+  height: 100%;
+}
+
+body {
+  background-color: #313131;
+  min-height: 100%;
+}
+
+body.finished {
+  background: none;
+}
+
+.page-sidebar {
+  background-color: #313131;
+  height: auto;
+  float: left;
+  margin-right: -100%;
+  max-height: none;
+  position: relative;
+  display: none;
+  width: 0;
+}
+
+.page-sidebar-opened .page-sidebar {
+  display: block;
+  width: 255px;
+}
+
+.page-content {
+  min-height: calc(100vh - 40px);
+  background: #fff;
+  padding: 20px;
+}
+
+.page-sidebar-opened .page-content {
+  margin-left: 255px;
+}
+
+#sidebar {
+  padding: 30px 0;
+}
+
+#sidebar .uk-nav ul {
+  padding: 0;
+}
+
+#sidebar .uk-nav-side ul a,
+#sidebar .uk-nav-side > li > a,
+#sidebar .uk-nav-side > li.uk-active > a {
+  color: #eeeeee;
+}
+
+#sidebar .uk-nav-side > li.uk-active > a {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#sidebar .uk-nav-side ul a {
+  padding-left: 30px;
+}
+
+#sidebar .uk-nav-side ul ul a {
+  padding-left: 45px;
+}
+
+#sidebar ul.uk-nav-sub {
+  padding-left: 0;
+}
+
+/**
+ * Loading spinner.
+ */
+body.loading .load-overlay {
+  display: block;
+}
+
+.load-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.load {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+}

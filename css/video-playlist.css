@@ -1,0 +1,16 @@
+﻿.vjs-playlist {
+  background: #313131;
+}
+
+.vjs-playlist-item-list {
+  display: flex;
+}
+
+.vjs-playlist .vjs-playlist-item-list .vjs-playlist-item {
+  flex-basis: 25%;
+  margin: 10px;
+}
+
+.vjs-playlist .vjs-playlist-now-playing-text {
+  color: #89BE44;
+}

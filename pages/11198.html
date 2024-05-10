@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+      <title>Master the “Sandwich” technique</title>
+        <script src="../libraries/jquery/jquery.min.js"></script>
+        <!-- UIkit -->
+    <link rel="stylesheet" href="../libraries/uikit/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../libraries/uikit/css/components/tooltip.min.css"/>
+    <script src="../libraries/uikit/js/uikit.min.js"></script>
+    <script src="../libraries/uikit/js/components/tooltip.min.js"></script>
+            <!-- h5p-Standalone -->
+    <link type="text/css" rel="stylesheet" media="all" href="../libraries/h5pstandalone/styles/h5p.css" />
+    <script src="../libraries/h5pstandalone/main.bundle.js" type="text/javascript"></script>
+      
+  <!-- Common -->
+  <script type="text/javascript" async src="../scripts/page/page.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/page.css"/>
+</head>
+
+<body>
+      <div>
+      
+      
+  <div class="widget uk-margin-bottom">
+    <h1>Master the “Sandwich” technique</h1>  </div>
+      
+  <div class="widget uk-margin-bottom">
+    <div id="h5p-11248"></div>  </div>
+      </div>
+  
+      
+  <script type="text/javascript" src="../scripts/page/scormH5P.js"></script>
+
+  <script type="text/javascript">
+    const { H5P } = H5PStandalone;
+    const H5Ptests = JSON.parse('{"11269":"HTGDFIE - Conclusion Quiz"}');
+
+    const options = {
+      frameJs: '../libraries/h5pstandalone/frame.bundle.js',
+      frameCss: '../libraries/h5pstandalone/styles/h5p.css'
+    };
+
+    const displayOptions = {
+      frame: true,
+      copyright: true,
+      embed: false,
+      download: false,
+      icon: true,
+      export: false
+    };
+
+    $(window.parent.document.body).addClass('loading');
+
+    // Runs simple h5p objects.
+    async function H5PStandaloneRun() {
+            options.id = 11248;
+      await new H5P(document.getElementById('h5p-11248'), '../h5p/clone-of-htgdfie-module-1-28263', options, displayOptions);
+          }
+
+    H5PStandaloneRun().then(() => {
+      $(window.parent.document.body).removeClass('loading');
+
+      if (typeof scormH5PtrackingFunctionality === 'function') {
+        scormH5PtrackingFunctionality();
+      }
+    });
+  </script>
+  </body>
+</html>

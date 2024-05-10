@@ -1,0 +1,29 @@
+﻿.CodeMirror {
+  height: auto;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.widget h1,
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h5,
+.widget h6 {
+  color: inherit !important;
+}
+
+em {
+  color: inherit;
+}
+
+.uk-button-primary {
+  background-color: #313131;
+}
+
+.uk-button-primary:hover {
+  background-color: #2f4145;
+}
